@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="distance <= 2.784\nmse = 135935.61\nsamples = 377488\nvalue = 733.38", fillcolor="#f6d1b7"] ;
+1 [label="speed <= 8.722\nmse = 76179.251\nsamples = 247510\nvalue = 575.67", fillcolor="#f9e0ce"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="distance <= 1.475\nmse = 99604.253\nsamples = 77071\nvalue = 793.94", fillcolor="#f4ccaf"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+62 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 62 ;
+109 [label="distance <= 1.707\nmse = 34301.768\nsamples = 170439\nvalue = 476.97", fillcolor="#fae8dc"] ;
+1 -> 109 ;
+110 [label="(...)", fillcolor="#C0C0C0"] ;
+109 -> 110 ;
+229 [label="(...)", fillcolor="#C0C0C0"] ;
+109 -> 229 ;
+324 [label="speed <= 13.498\nmse = 112170.805\nsamples = 129978\nvalue = 1033.7", fillcolor="#f0b78d"] ;
+0 -> 324 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+325 [label="speed <= 10.038\nmse = 66078.871\nsamples = 38016\nvalue = 1243.243", fillcolor="#eca470"] ;
+324 -> 325 ;
+326 [label="(...)", fillcolor="#C0C0C0"] ;
+325 -> 326 ;
+341 [label="(...)", fillcolor="#C0C0C0"] ;
+325 -> 341 ;
+380 [label="distance <= 4.971\nmse = 105570.168\nsamples = 91962\nvalue = 947.078", fillcolor="#f2be99"] ;
+324 -> 380 ;
+381 [label="(...)", fillcolor="#C0C0C0"] ;
+380 -> 381 ;
+452 [label="(...)", fillcolor="#C0C0C0"] ;
+380 -> 452 ;
+}
